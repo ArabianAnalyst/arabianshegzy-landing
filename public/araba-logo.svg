@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" width="240" height="56" role="img" aria-label="ARABA">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@900&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Dark background (remove rect for transparent) -->
+  <rect width="240" height="56" fill="#080808"/>
+  <!-- ▸ arrow — banana yellow -->
+  <text
+    x="0"
+    y="42"
+    font-family="'Syne', 'Arial Black', sans-serif"
+    font-weight="900"
+    font-size="46"
+    letter-spacing="-1"
+    fill="#E8D832"
+  >▸</text>
+  <!-- ARABA — off white -->
+  <text
+    x="40"
+    y="42"
+    font-family="'Syne', 'Arial Black', sans-serif"
+    font-weight="900"
+    font-size="46"
+    letter-spacing="-1.5"
+    fill="#EDEAE3"
+  >ARABA</text>
+</svg>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1500px;
+    height: 500px;
+    overflow: hidden;
+    background: #0A0A0A;
+  }
+
+  .banner {
+    width: 1500px;
+    height: 500px;
+    background: #0A0A0A;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 52px 100px 48px;
+    overflow: hidden;
+  }
+
+  /* Grain */
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Big ghost text behind */
+  .ghost {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 320px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: rgba(232, 216, 50, 0.03);
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
+
+  /* Yellow left bar */
+  .y-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #E8D832;
+    z-index: 2;
+  }
+
+  /* Top row */
+  .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+
+  .brand {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #EDEAE3;
+  }
+
+  .brand span {
+    color: #E8D832;
+  }
+
+  .top-meta {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .meta-item {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2D2D2D;
+  }
+
+  /* Center content */
+  .center {
+    position: relative;
+    z-index: 2;
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #E8D832;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .eyebrow::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #E8D832;
+    opacity: 0.5;
+  }
+
+  .headline {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 0.86;
+    letter-spacing: -0.045em;
+    color: #EDEAE3;
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+  }
+
+  .headline .second {
+    color: #E8D832;
+  }
+
+  .headline .divider {
+    width: 3px;
+    height: 70px;
+    background: #1C1C1C;
+    flex-shrink: 0;
+    align-self: center;
+    margin: 0 8px;
+  }
+
+  /* Bottom row */
+  .bottom-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+
+  .sub {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+  }
+
+  .sub strong {
+    color: #888888;
+    font-weight: 500;
+  }
+
+  .bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  .handle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: #383838;
+  }
+
+  .url {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: #E8D832;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="y-bar"></div>
+  <div class="ghost">AI</div>
+
+  <div class="top-row">
+    <div class="brand">ARABIAN<span>SHEGZY</span></div>
+    <div class="top-meta">
+      <div class="meta-item">MSc Data Science</div>
+      <div class="meta-item">Python · LangChain · n8n</div>
+      <div class="meta-item">OpenAI API</div>
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="eyebrow">Actionable AI</div>
+    <div class="headline">
+      I Build It.
+      <div class="divider"></div>
+      <span class="second">I Teach It.</span>
+    </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="sub">
+      <strong>Helping business owners automate with AI.</strong><br>
+      Real systems. Real results. Weekly.
+    </div>
+    <div class="bottom-right">
+      <div class="handle">@Olurabian</div>
+      <div class="url">arabianshegzy.com</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
