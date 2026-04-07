@@ -8,7 +8,7 @@ const NAV_LINKS = [
 ]
 
 const SOCIAL_LINKS = [
-  { label: 'X / Twitter', href: 'https://x.com/ArabianShegzy' },
+  { label: 'X / Twitter', href: 'https://x.com/Olurabian' },
   { label: 'LinkedIn',    href: 'https://linkedin.com'         },
   { label: 'GitHub',      href: 'https://github.com'           },
 ]
@@ -76,7 +76,7 @@ export default function Footer() {
             © {new Date().getFullYear()} ARABA · Built with MWP
           </p>
           <p style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '0.6rem', letterSpacing: '0.08em', color: '#383838' }}>
-            @ArabianShegzy
+            @Olurabian
           </p>
         </div>
       </div>

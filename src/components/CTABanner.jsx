@@ -67,10 +67,10 @@ export default function CTABanner() {
               <p style={{ fontFamily: 'Outfit, sans-serif', fontSize: '0.8rem', color: 'rgba(8,8,8,0.45)', textAlign: 'center' }}>
                 Or email:{' '}
                 <a
-                  href="mailto:araba@arabianshegzy.com"
+                  href="mailto:araba@olurabian.com"
                   style={{ color: 'rgba(8,8,8,0.65)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
                 >
-                  araba@arabianshegzy.com
+                  araba@olurabian.com
                 </a>
               </p>
             </div>
