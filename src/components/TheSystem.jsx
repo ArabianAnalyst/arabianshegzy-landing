@@ -12,13 +12,13 @@ const PIPELINES = [
     label: 'AGENCY',
     color: '#22c55e',
     desc: 'Brief → live site',
-    nodes: ['Web Agency', 'SEO', 'Ads', 'Marketing Agency'],
+    nodes: ['Web Agency', 'SEO', 'Ads', 'Marketing Agency', 'Copywriting', 'Brand Strategy'],
   },
   {
     label: 'BUSINESS',
     color: '#f97316',
     desc: 'Idea → revenue',
-    nodes: ['SaaS', 'Lead Gen', 'Email Marketing', 'Revenue', 'Operations'],
+    nodes: ['SaaS', 'Lead Gen', 'Email Marketing', 'Revenue', 'Operations', 'Products & Offers'],
   },
   {
     label: 'KNOWLEDGE',
@@ -30,7 +30,7 @@ const PIPELINES = [
     label: 'OPS',
     color: '#c084fc',
     desc: 'Systems that run the system',
-    nodes: ['Community', 'Client CRM', 'Finance', 'Templates', 'AI Systems'],
+    nodes: ['Community', 'Client CRM', 'Finance', 'Templates', 'AI Systems', 'Content Calendar'],
   },
 ]
 
@@ -75,7 +75,7 @@ export default function TheSystem() {
               className="font-black tracking-tighter"
               style={{ fontFamily: 'Syne, sans-serif', fontSize: 'clamp(2rem, 5vw, 4rem)', lineHeight: 0.95, color: '#EDEAE3' }}
             >
-              23 workspaces.<br />
+              27 workspaces.<br />
               <span style={{ color: '#E8D832' }}>One operator.</span>
             </motion.h2>
           </div>
@@ -180,7 +180,7 @@ export default function TheSystem() {
           style={{ marginTop: '3rem', display: 'flex', gap: '3rem', flexWrap: 'wrap' }}
         >
           {[
-            { value: '23', label: 'Workspaces' },
+            { value: '27', label: 'Workspaces' },
             { value: '5',  label: 'Pipelines' },
             { value: '1',  label: 'Operator' },
           ].map((s) => (

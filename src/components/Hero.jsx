@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 
 const pipelines = [
   { label: 'CONTENT',  color: '#6366f1', nodes: ['Script Lab', 'Animation Studio', 'Video Production', 'YouTube', 'Social Content'] },
-  { label: 'AGENCY',   color: '#22c55e', nodes: ['Web Agency', 'SEO', 'Ads', 'Marketing Agency'] },
-  { label: 'BUSINESS', color: '#f97316', nodes: ['SaaS', 'Lead Gen', 'Email Marketing', 'Revenue', 'Operations'] },
+  { label: 'AGENCY',   color: '#22c55e', nodes: ['Web Agency', 'SEO', 'Ads', 'Marketing Agency', 'Copywriting', 'Brand Strategy'] },
+  { label: 'BUSINESS', color: '#f97316', nodes: ['SaaS', 'Lead Gen', 'Email Marketing', 'Revenue', 'Operations', 'Products & Offers'] },
   { label: 'KNOWLEDGE',color: '#38bdf8', nodes: ['Research', 'Data & Analytics', 'Courses', 'Personal Brand'] },
-  { label: 'OPS',      color: '#c084fc', nodes: ['Community', 'Client CRM', 'Finance', 'Templates', 'AI Systems'] },
+  { label: 'OPS',      color: '#c084fc', nodes: ['Community', 'Client CRM', 'Finance', 'Templates', 'AI Systems', 'Content Calendar'] },
 ]
 
 export default function Hero() {
@@ -67,7 +67,7 @@ export default function Hero() {
           style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '5rem' }}
         >
           <a
-            href="https://wa.me/2348053566386"
+            href="https://wa.me/447423222566"
             target="_blank"
             rel="noopener noreferrer"
             style={{ background: 'var(--banana)', color: '#080808', fontWeight: 700, padding: '0.875rem 2rem', borderRadius: '999px', textDecoration: 'none', fontSize: '0.95rem' }}
@@ -92,7 +92,7 @@ export default function Hero() {
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '2rem', flexWrap: 'wrap', gap: '0.5rem' }}>
             <p className="font-mono-brand" style={{ fontSize: '0.7rem', letterSpacing: '0.2em', color: 'var(--text-muted)', textTransform: 'uppercase' }}>
-              23 Workspaces. One System.
+              27 Workspaces. One System.
             </p>
             <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
               Every arrow is a handoff. Output of one stage = input of the next.

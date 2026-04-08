@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-const WA_NUMBER = '2348053566386'
+const WA_NUMBER = '447423222566'
 const WA_MESSAGE = encodeURIComponent("Hi ARABA, I want to build something.")
 
 export default function CTABanner() {
