@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { label: 'Services',     href: '#services'    },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'About',        href: '#about'        },
+  { label: 'Shop',         href: '/web-agency-kit', external: false },
 ]
 
 export default function Navbar() {
@@ -39,16 +40,19 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-10">
-          {NAV_LINKS.map(({ label, href }) => (
-            <a key={href} href={href}
-              className="text-sm font-medium transition-colors duration-200"
-              style={{ color: '#666666', fontFamily: 'Outfit, sans-serif' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#EDEAE3')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#666666')}
-            >
-              {label}
-            </a>
-          ))}
+          {NAV_LINKS.map(({ label, href }) => {
+            const isShop = label === 'Shop'
+            return (
+              <a key={href} href={href}
+                className="text-sm font-medium transition-colors duration-200"
+                style={{ color: isShop ? '#E8D832' : '#666666', fontFamily: 'Outfit, sans-serif' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#EDEAE3')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = isShop ? '#E8D832' : '#666666')}
+              >
+                {label}
+              </a>
+            )
+          })}
         </nav>
 
         {/* CTA */}
@@ -85,7 +89,7 @@ export default function Navbar() {
         >
           {NAV_LINKS.map(({ label, href }) => (
             <a key={href} href={href} onClick={() => setOpen(false)}
-              className="text-sm font-medium" style={{ color: '#666666' }}>
+              className="text-sm font-medium" style={{ color: label === 'Shop' ? '#E8D832' : '#666666' }}>
               {label}
             </a>
           ))}
