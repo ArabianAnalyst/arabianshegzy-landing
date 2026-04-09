@@ -8,6 +8,7 @@ import Hero             from './components/Hero'
 import MarqueeTicker    from './components/MarqueeTicker'
 import Services         from './components/Services'
 import TheSystem        from './components/TheSystem'
+import VideoShowcase    from './components/VideoShowcase'
 import WhyUs            from './components/WhyUs'
 import HowItWorks       from './components/HowItWorks'
 import About            from './components/About'
@@ -27,6 +28,7 @@ function LandingPage() {
         <MarqueeTicker />
         <Services />
         <TheSystem />
+        <VideoShowcase />
         <WhyUs />
         <HowItWorks />
         <About />
