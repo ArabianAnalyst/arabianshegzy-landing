@@ -48,7 +48,7 @@ const FAQS = [
 
 // ─── Buy button ───────────────────────────────────────────────
 // Replace LEMON_SQUEEZY_URL with your actual Lemon Squeezy product URL
-const LEMON_SQUEEZY_URL = '#buy'
+const LEMON_SQUEEZY_URL = 'https://olurabian.lemonsqueezy.com/checkout/buy/19bffb6f-37bc-454c-94d3-b9eb75dc91db'
 
 function BuyButton({ size = 'lg' }) {
   const large = size === 'lg'
@@ -81,7 +81,7 @@ function BuyButton({ size = 'lg' }) {
         e.currentTarget.style.boxShadow = 'none'
       }}
     >
-      Get the Web Agency Kit — £49
+      Get the Web Agency Kit — £49.99
       <svg viewBox="0 0 12 12" fill="none" width="14" height="14">
         <path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
@@ -227,7 +227,7 @@ export default function WebAgencyKit() {
           >
             <BuyButton />
             <p style={{ fontFamily: 'Outfit, sans-serif', fontSize: '0.78rem', color: '#383838' }}>
-              Instant download · 13 files · Drop into Claude Code and run your first project today
+              £49.99 · Instant download · 13 files · Drop into Claude Code and run your first project today
             </p>
           </motion.div>
         </div>
@@ -346,7 +346,7 @@ export default function WebAgencyKit() {
           <span style={{ color: '#E8D832' }}>with a system behind it.</span>
         </h2>
         <p style={{ fontFamily: 'Outfit, sans-serif', color: '#666666', fontSize: '0.95rem', marginBottom: '2.5rem' }}>
-          £49 · Instant download · One-time purchase
+          £49.99 · Instant download · One-time purchase
         </p>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <BuyButton />
