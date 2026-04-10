@@ -44,8 +44,24 @@ export default function ClientBrief() {
     if (!valid) return
     setStatus('loading')
 
-    // Simulate submit — swap this for your email provider API call
-    await new Promise(r => setTimeout(r, 900))
+    // Add contact to Loops and trigger welcome email
+    try {
+      await fetch('https://app.loops.so/api/v1/contacts/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${import.meta.env.VITE_LOOPS_API_KEY}`,
+        },
+        body: JSON.stringify({
+          firstName: name.trim(),
+          email: email.trim(),
+          source: 'free-brief-landing',
+          userGroup: 'lead',
+        }),
+      })
+    } catch (_) {
+      // Silently continue — don't block the download on a network error
+    }
 
     // Trigger the download
     const link = document.createElement('a')
