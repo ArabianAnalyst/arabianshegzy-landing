@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { label: 'Services',     href: '#services'    },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'About',        href: '#about'        },
+  { label: 'Free Brief',   href: '/free-brief',     external: false },
   { label: 'Shop',         href: '/web-agency-kit', external: false },
 ]
 
@@ -42,12 +43,13 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-10">
           {NAV_LINKS.map(({ label, href }) => {
             const isShop = label === 'Shop'
+            const isBrief = label === 'Free Brief'
             return (
               <a key={href} href={href}
                 className="text-sm font-medium transition-colors duration-200"
-                style={{ color: isShop ? '#E8D832' : '#666666', fontFamily: 'Outfit, sans-serif' }}
+                style={{ color: isShop ? '#E8D832' : isBrief ? '#EDEAE3' : '#666666', fontFamily: 'Outfit, sans-serif' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#EDEAE3')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = isShop ? '#E8D832' : '#666666')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = isShop ? '#E8D832' : isBrief ? '#EDEAE3' : '#666666')}
               >
                 {label}
               </a>

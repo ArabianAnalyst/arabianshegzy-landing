@@ -18,6 +18,7 @@ import CTABanner        from './components/CTABanner'
 import Footer           from './components/Footer'
 import AdminPanel       from './pages/AdminPanel'
 import WebAgencyKit    from './pages/WebAgencyKit'
+import ClientBrief     from './pages/ClientBrief'
 
 // ─── Landing page ────────────────────────────────────────────
 function LandingPage() {
@@ -65,6 +66,7 @@ export default function App() {
           {/* Hidden admin panel — not linked in the UI */}
           <Route path="/admin"           element={<AdminPanel />} />
           <Route path="/web-agency-kit" element={<WebAgencyKit />} />
+          <Route path="/free-brief"     element={<ClientBrief />} />
         </Routes>
       )}
     </>
