@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#080808"/>
+
+  <!-- Top yellow bar -->
+  <rect width="1200" height="5" fill="#E8D832"/>
+
+  <!-- Logo mark — ▸ -->
+  <text
+    x="96"
+    y="290"
+    font-family="'Arial Black', sans-serif"
+    font-weight="900"
+    font-size="120"
+    fill="#E8D832"
+  >▸</text>
+
+  <!-- ARABA wordmark -->
+  <text
+    x="220"
+    y="290"
+    font-family="'Arial Black', sans-serif"
+    font-weight="900"
+    font-size="120"
+    letter-spacing="-4"
+    fill="#EDEAE3"
+  >ARABA</text>
+
+  <!-- Tagline -->
+  <text
+    x="96"
+    y="370"
+    font-family="'Arial', sans-serif"
+    font-weight="400"
+    font-size="36"
+    letter-spacing="1"
+    fill="#555555"
+  >Websites · Content · AI Systems · Ships in Days</text>
+
+  <!-- Bottom accent line -->
+  <rect x="96" y="460" width="80" height="3" fill="#E8D832"/>
+
+  <!-- URL -->
+  <text
+    x="96"
+    y="510"
+    font-family="'Courier New', monospace"
+    font-size="28"
+    fill="#383838"
+    letter-spacing="2"
+  >olurabian.com</text>
+</svg>
