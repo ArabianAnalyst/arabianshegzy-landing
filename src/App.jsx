@@ -19,6 +19,9 @@ import Footer           from './components/Footer'
 import AdminPanel       from './pages/AdminPanel'
 import WebAgencyKit    from './pages/WebAgencyKit'
 import ClientBrief     from './pages/ClientBrief'
+import Privacy         from './pages/Privacy'
+import Terms           from './pages/Terms'
+import SupportChat     from './components/SupportChat'
 
 // ─── Landing page ────────────────────────────────────────────
 function LandingPage() {
@@ -61,13 +64,18 @@ export default function App() {
 
       {/* Main content — hidden until loader finishes */}
       {!loading && (
-        <Routes>
-          <Route path="/"      element={<LandingPage />} />
-          {/* Hidden admin panel — not linked in the UI */}
-          <Route path="/admin"           element={<AdminPanel />} />
-          <Route path="/web-agency-kit" element={<WebAgencyKit />} />
-          <Route path="/free-brief"     element={<ClientBrief />} />
-        </Routes>
+        <>
+          <Routes>
+            <Route path="/"      element={<LandingPage />} />
+            {/* Hidden admin panel — not linked in the UI */}
+            <Route path="/admin"           element={<AdminPanel />} />
+            <Route path="/web-agency-kit" element={<WebAgencyKit />} />
+            <Route path="/free-brief"     element={<ClientBrief />} />
+            <Route path="/privacy"        element={<Privacy />} />
+            <Route path="/terms"          element={<Terms />} />
+          </Routes>
+          <SupportChat />
+        </>
       )}
     </>
   )
